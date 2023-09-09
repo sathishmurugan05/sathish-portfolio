@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sathish</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon web images -->
+    <link href="https://img.icons8.com/external-others-inmotus-design/344/external-S-round-latin-keyboard-others-inmotus-design.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!--Bootstrap link-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    
+    <style>
+        
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ 
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6c757d;
+  text-align: left;
+  background-color: #ffffff;
+}
+ 
+a {
+  color: #0BCEAF;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #078571;
+  text-decoration: underline;
+}
+ 
+h1,h2,h3,h4,h5,h6,p{
+  color: #020202 !important;
+} 
+
+
+.text-stroke-header {
+  -webkit-text-stroke: 3px #ffffff;
+  color: transparent;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 100px;
+}
+
+.btn-social {
+  width: 45px;
+  height: 45px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  border-radius: 45px;
+}
+
+.form-control {
+  border-radius: 25px;
+}
+
+
+
+
+/* ================ Navigation bar====================*/
+
+
+.navbar-light {
+  display: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 25px 10px;
+  color: #343a40;
+  font-weight: 500;
+  outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: blue;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+}
+
+
+/*===================== portion ======================*/
+
+.about-img{
+ margin-left: -100px;
+ right: -60px;
+}
+
+.display-1{
+  font-size: 160px;
+  font-weight: 1000;
+  
+}
+ 
+.position-absolute{
+  font-weight: 700;
+  
+}
+
+.typed-cursor {
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.blue{
+  background-color: #1c5ce6;
+  color: #ffffff;
+}
+.btn{
+  border: 2px solid rgb(29, 105, 247);
+} 
+.btn-white{
+  background-color: #ffffff;
+  border:2px solid #ffffff;
+}
+.btn-blue{
+  border: 2.4px solid #ffffff;
+  color: #ffffff;
+}
+@media (max-width: 700px) {
+  .about-img{
+    margin-left: 20px;
+    right: 0px;
+    top: 30px;
+   }
+}
+/*===================== Progress Bar ====================*/
+
+.progress {
+  border-radius: 10px;
+}
+
+.progress .progress-bar {
+  width: 0px;
+  border-radius: 10px;
+  transition: 2s;
+}
+
+
+/* =================== Quality ======================*/
+.ex-me{
+  margin-top: 35px;
+}
+
+
+/* =================== Service Section ==================*/
+.service-h4{
+  padding-bottom: 30px;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+
+.service-box{
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);  
+  margin-left: 20px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.service-box:hover{
+  box-shadow: 0px 1px 13px rgba(27, 27, 27, 0.705); 
+ 
+}
+
+/* ========================== Contact Us ========================*/
+
+.contact-form .help-block ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+/*====================== Back to bottom ==================*/
+
+.scroll-to-bottom {
+  position: fixed;
+  width: 20px;
+  left: calc(50% - 10px);
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 30px;
+  text-align: center;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.form-control {
+  width: 100%;
+  padding: 25px 30px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(165, 179, 172);
+  border-radius: 30px;
+  box-sizing: border-box;
+ 
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+    
+            <h1 class="m-0 display-5"><span class="text-primary">Michael</span>Sathish</h1>
+    
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active" style="font-size:25px;">Home</a>
+                <a href="#about" class="nav-item nav-link" style="font-size:25px;">About</a>
+                <a href="#skill" class="nav-item nav-link" style="font-size:25px;">Skill</a>
+                <a href="#qualification" class="nav-item nav-link" style="font-size:25px;">Education</a>
+                
+            </div>
+            <a href="#contact" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Contact me</a>
+        </div>
+    </nav>
+    <!-- Navigation-bar End -->
+
+ 
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+               
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Hello, my name</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 4px #ffffff;">Sathish M</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                   
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="https://instagram.com/michael_sathish05?igshid=YmMyMTA2M2Y=" class="btn btn-white mr-4">Text me</a>
+                        
+                    </div>
+                    <div class="typed-text d-none">Web Designer, Web Developer.</div>
+                </div>
+                <div class="col-lg-6 px-8 pl-lg-0 pb-5 pb-lg-4 about-img">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="http://drive.google.com/uc?export=view&id=1DZhXj8V19Ofds89MknRQL6R4-nrxvsNz" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="http://drive.google.com/uc?export=view&id=1Ahm8sJkP4MOEsuLLCtpAdNdRaomztY33" alt="image">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4"> Web Developer</h3>
+                    <p>First I am started to learn about how to build a website then from scratch I am started to learn HTML and CSS that was very interesting and pulled me to learn about BOOTSTRAP and JAVASCRIPT(little-bit).</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Sathish M</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">29 may 2003</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">9345666829</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">sathish49061@gamil.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Chinnasalem, Tamil Nadu, India</span></h6></div>
+    
+                    </div>
+                    <a href="https://instagram.com/michael_sathish05?igshid=YmMyMTA2M2Y=" class="btn blue btn-outline-primary mr-4">Hire Me</a>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <br>
+            <div class="skill-mf">
+               
+                <span>HTML</span> <span class="pull-right">65%</span>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div><br>
+                <br>
+                <span>CSS</span> <span class="pull-right">55%</span>
+                <div class="progress">
+                  <div class="progress-bar  bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div><br>
+                <br>
+                <span>JAVASCRIPT</span> <span class="pull-right">10%</span>
+                <div class="progress">
+                  <div class="progress-bar bg-warning " role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div><br>
+                <br>
+                <span>BOOTSTRAP</span> <span class="pull-right">40%</span>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div><br>
+                <br>
+              </div>
+            
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">SSLC</h5>
+                            <p class="mb-2"><strong>Sri Venkateswara school</strong> | <small>2017 - 2018</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">HSC</h5>
+                            <p class="mb-2"><strong>Sri Venkateswara school</strong> | <small>2018- 2019</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Design</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web-Development</h4>
+                    </div>
+                    <p>Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+  
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div>
+                <form action="mailto:michaelsathish49061@gmail.com" method="post" role="form" class="contactForm">
+                
+                <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="text"  class="form-control" name=Name id="name" placeholder="Enter your name" required data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Enter your mail id" required data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" rows="5" data-rule="required" required data-msg="Please write something for us" placeholder="Something about me"></textarea>
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="btn blue btn-outline-primary mr-4">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social" href="https://instagram.com/michael_sathish05?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Sathish</a>. All Rights Reserved & Designed by <a class="text-white font-weight-bold" href="https://instagram.com/michael_sathish05?igshid=YmMyMTA2M2Y=">Michael</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <script>(function ($) {
+        "use strict";
+    
+        // Navbar on scrolling
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+                $('.navbar').fadeIn('slow').css('display', 'flex');
+            } else {
+                $('.navbar').fadeOut('slow').css('display', 'none');
+            }
+        });
+    
+    
+        
+    
+        // Typed Initiate
+        if ($('.typed-text-output').length == 1) {
+            var typed_strings = $('.typed-text').text();
+            var typed = new Typed('.typed-text-output', {
+                strings: typed_strings.split(', '),
+                typeSpeed: 100,
+                backSpeed: 20,
+                smartBackspace: false,
+                loop: true
+            });
+        }
+    
+    
+        // Modal Video
+        $(document).ready(function () {
+            var $videoSrc;
+            $('.btn-play').click(function () {
+                $videoSrc = $(this).data("src");
+            });
+            console.log($videoSrc);
+    
+            $('#videoModal').on('shown.bs.modal', function (e) {
+                $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+            })
+    
+            $('#videoModal').on('hide.bs.modal', function (e) {
+                $("#video").attr('src', $videoSrc);
+            })
+        });
+    
+    
+        // Scroll to Bottom
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scroll-to-bottom').fadeOut('slow');
+            } else {
+                $('.scroll-to-bottom').fadeIn('slow');
+            }
+        });
+    
+    
+        // Skills
+        $('.skill').waypoint(function () {
+            $('.progress .progress-bar').each(function () {
+                $(this).css("width", $(this).attr("aria-valuenow") + '%');
+            });
+        }, {offset: '80%'});
+    
+    
+       
+        
+        // Back to top button
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+                $('.back-to-top').fadeIn('slow');
+            } else {
+                $('.back-to-top').fadeOut('slow');
+            }
+        });
+        $('.back-to-top').click(function () {
+            $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+            return false;
+        });
+    
+    
+        
+        
+    })(jQuery);
+    </script>
+</body>
+
+</html>
